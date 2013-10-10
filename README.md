@@ -11,6 +11,6 @@ This should work on:
  - Safari
  - Internet Explorer (9 or higher)
  
- Documentation:
+Documentation:
  
- wiki (TODO)
+wiki (TODO)
