@@ -1,0 +1,18 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+text {
+  font: bold 48px monospace;
+}
+
+.enter {
+  fill: green;
+}
+
+.update {
+  fill: #333;
+}
