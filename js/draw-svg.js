@@ -30,11 +30,15 @@ svg_logo =
 
 // Dynamic Text Branding
 d3.json("json/test.json", function(json) {
+	
 	//Dynamic Text Logo
 	svg_logo = 
 		svg_brand.selectAll(".svg-logo")
 				.data(json)
 			.enter().append("text")
+				.attr("x", "0")
+				.text("")
+			.transition() 
 				.attr("class", "svg-logo")
 				.attr("font-family", "sans-serif")
 				.attr("fill", "red")
@@ -48,6 +52,9 @@ d3.json("json/test.json", function(json) {
 		svg_brand.selectAll(".svg-slogan")
 				.data(json)
 			.enter().append("text")
+				.attr("x", "0")
+				.text("")
+			.transition() 
 				.attr("class", "svg-slogan")
 				.attr("font-family", "sans-serif")
 				.attr("fill", "black")
