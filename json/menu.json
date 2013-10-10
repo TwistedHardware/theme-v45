@@ -1,1 +1,6 @@
-[ {"title": "Home", "target": "main", "source": "page1.html"}, {"title": "Other Page", "target": "main", "source": "page2.html"} ]
+[ 
+	{"title": "Home", "target": "main", "source": "page1.html"}, 
+	{"title": "SVG for Web", "target": "main", "source": "page2.html"},
+	{"title": "Docs", "target": "main", "source": "page3.html"},
+	{"title": "About", "target": "main", "source": "page4.html"} 
+]
