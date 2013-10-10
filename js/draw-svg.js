@@ -16,24 +16,25 @@ svg_brand =
 svg_logo = 
 	svg_brand.append("text")
 		.attr("class", "svg-logo")
-        .attr("font-family", "sans-serif")
-        .attr("font-size", "20px")
-        .attr("fill", "red")
-        .attr("x", "20")
-        .attr("y", "50")
-        .attr("text-anchor", "start")
+		.attr("font-family", "sans-serif")
+		.attr("font-size", "20px")
+		.attr("fill", "red")
+		.attr("x", "20")
+		.attr("y", "50")
+		.attr("text-anchor", "start")
 		.text("v45");
  */
 
 
-// Dynamic Text Title
+// Dynamic Text Branding
 d3.json("json/test.json", function(json) {
+	//Dynamic Text Logo
 	svg_logo = 
 		svg_brand.selectAll(".svg-logo")
 				.data(json)
 			.enter().append("text")
 				.attr("class", "svg-logo")
-		        .attr("font-family", "sans-serif")
+				.attr("font-family", "sans-serif")
 		        .attr("fill", "red")
 		        .attr("x", "10")
 		        .attr("y", "50")
@@ -46,10 +47,10 @@ d3.json("json/test.json", function(json) {
 				.data(json)
 			.enter().append("text")
 				.attr("class", "svg-slogan")
-		        .attr("font-family", "sans-serif")
-		        .attr("fill", "black")
-		        .attr("x", "10")
-		        .attr("y", "80")
-		        .attr("text-anchor", "start")
+				.attr("font-family", "sans-serif")
+				.attr("fill", "black")
+				.attr("x", "10")
+				.attr("y", "80")
+				.attr("text-anchor", "start")
 				.text(function(d){ return d.slogan; });
 });
