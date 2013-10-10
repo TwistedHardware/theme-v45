@@ -6,7 +6,7 @@ body
 
 
 text {
-  font: bold 48px monospace;
+  font: 16px;
 }
 
 .enter {
@@ -15,4 +15,16 @@ text {
 
 .update {
   fill: #333;
+}
+
+.svg-logo
+{
+	fill: red;
+	font: bold 48px monospace;
+}
+
+.svg-slogan
+{
+	fill: black;
+	font: bold 16px monospace;
 }

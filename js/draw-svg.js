@@ -3,23 +3,53 @@ var svg =
 		.append("g")
 			.attr("transform", "translate(0,0)");
 
-var circle;
+var svg_brand, svg_logo, svg_slogan;
 
+svg_brand = 
+	svg.append("g")
+		.attr("transform", "translate(0,0)")
+		.attr("class", "svg-brand");
+
+/**
+
+// Static Text Logo Test - (Working)
+svg_logo = 
+	svg_brand.append("text")
+		.attr("class", "svg-logo")
+        .attr("font-family", "sans-serif")
+        .attr("font-size", "20px")
+        .attr("fill", "red")
+        .attr("x", "20")
+        .attr("y", "50")
+        .attr("text-anchor", "start")
+		.text("v45");
+ */
+
+
+// Dynamic Text Title
 d3.json("json/test.json", function(json) {
-	svg.selectAll("circle")
-			.data(json)
-		.enter().append("circle")
-			.attr("cx", function(d) { return d.x; })
-			.attr("cy", function(d) { return d.y; })
-			.attr("r", function(d) { return d.r; })
-		.transition()
-		    .attr("r", 1)
-		.transition()
-			.attr("r", 10)
-		.transition()
-		    .attr("r", 1)
-		.transition()
-			.attr("r", 5)
-		.transition()
-			.attr("r", function(d) { return d.r; });
+	svg_logo = 
+		svg_brand.selectAll(".svg-logo")
+				.data(json)
+			.enter().append("text")
+				.attr("class", "svg-logo")
+		        .attr("font-family", "sans-serif")
+		        .attr("fill", "red")
+		        .attr("x", "10")
+		        .attr("y", "50")
+		        .attr("text-anchor", "start")
+				.text(function(d){ return d.title; });
+	
+	//Dynamic Text Slogan
+	svg_slogan = 
+		svg_brand.selectAll(".svg-slogan")
+				.data(json)
+			.enter().append("text")
+				.attr("class", "svg-slogan")
+		        .attr("font-family", "sans-serif")
+		        .attr("fill", "black")
+		        .attr("x", "10")
+		        .attr("y", "80")
+		        .attr("text-anchor", "start")
+				.text(function(d){ return d.slogan; });
 });
