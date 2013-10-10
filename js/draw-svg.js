@@ -1,10 +1,13 @@
+// Declare main objects in svg
+var svg_brand, svg_logo, svg_slogan;
+
+// Prepare SVG
 var svg = 
 	d3.select("body").select("svg")
 		.append("g")
 			.attr("transform", "translate(0,0)");
 
-var svg_brand, svg_logo, svg_slogan;
-
+// Add g for branding
 svg_brand = 
 	svg.append("g")
 		.attr("transform", "translate(0,0)")
@@ -25,7 +28,6 @@ svg_logo =
 		.text("v45");
  */
 
-
 // Dynamic Text Branding
 d3.json("json/test.json", function(json) {
 	//Dynamic Text Logo
@@ -35,10 +37,10 @@ d3.json("json/test.json", function(json) {
 			.enter().append("text")
 				.attr("class", "svg-logo")
 				.attr("font-family", "sans-serif")
-		        .attr("fill", "red")
-		        .attr("x", "10")
-		        .attr("y", "50")
-		        .attr("text-anchor", "start")
+				.attr("fill", "red")
+				.attr("x", "10")
+				.attr("y", "50")
+				.attr("text-anchor", "start")
 				.text(function(d){ return d.title; });
 	
 	//Dynamic Text Slogan
