@@ -30,3 +30,9 @@ text {
 	font-family: monospace;
 	font-weight: 700;
 }
+
+.svg-menu-mask:hover
+{
+	fill: rgba(0,0,0,0.15);
+	cursor: pointer;
+}
