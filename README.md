@@ -3,7 +3,7 @@ theme-v45
 
 Using SVG to create a web page.
 
-To see this in action download the git and open index.html in your browser (make sure you extract all folders).
+<a href="http://twistedhardware.github.io/theme-v45/">Live Demo</a>
 
 This should work on:
  - Firefox
