@@ -20,11 +20,13 @@ text {
 .svg-logo
 {
 	fill: red;
-	font: bold 48px monospace;
+	font-family: monospace;
+	font-weight: 700;
 }
 
 .svg-slogan
 {
 	fill: black;
-	font: bold 16px monospace;
+	font-family: monospace;
+	font-weight: 700;
 }

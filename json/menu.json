@@ -1,0 +1,1 @@
+[ {"title": "Home", "target": "main", "source": "page1.html"}, {"title": "Other Page", "target": "main", "source": "page2.html"} ]
