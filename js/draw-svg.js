@@ -1,5 +1,5 @@
 // Declare main objects in svg
-var svg_brand, svg_logo, svg_slogan, svg_menu, svg_menu_1, svg_menu_2;
+var svg_brand, svg_logo, svg_slogan, svg_menu, svg_menu_1, svg_menu_2, svg_page;
 
 // Prepare SVG
 var svg = 
@@ -235,3 +235,59 @@ d3.json("json/menu.json", function(json) {
 				.attr("width", "200")
 				.attr("x", "5");
 });
+
+//Add g for Page Contents
+svg_page = 
+	svg.append("g")
+		.attr("transform", "translate(0,0)")
+		.attr("class", "");
+
+//Adding sattic page contets
+svg_page.append("rect")
+	.attr("ry", "6")
+	.attr("rx", "6")
+	.attr("y", "25")
+	.attr("x", "150")
+	.attr("height", "550")
+	.attr("width", "1")
+	.attr("fill", "rgba(0,0,0,0)")
+	.attr("stroke", "rgba(99,99,99,0)")
+	.attr("stroke-width", "2")
+	.attr("class", "svg-menu-item")
+	.transition()
+		.delay(500)
+		.duration(500)
+		.attr("stroke", "rgba(99,99,99,1)")
+		.attr("width", "570")
+		.attr("x", "220");
+
+svg_page.append("text")
+	.attr("class", "svg-menu-text")
+	.attr("font-family", "sans-serif")
+	.attr("font-size", "32px")
+	.attr("fill", "rgba(255,0,0,0)")
+	.attr("x", "240")
+	.attr("y", "70")
+	.attr("text-anchor", "start")
+	.text("Page Title")
+		.transition()
+		.delay(750)
+		.duration(500)
+		.attr("fill", "rgba(255,0,0,1)");
+
+svg_page.append("foreignObject")
+	.attr("class", "svg-p-text")
+	.attr("font-family", "sans-serif")
+	.attr("font-size", "18px")
+	.attr("fill", "rgba(255,0,0,0)")
+	.attr("x", "240")
+	.attr("y", "110")
+	.attr("width", "500")
+	.attr("height", "480")
+	.style("color", "rgba(0,0,0,0)")
+	.html("Very long text goes here. Very long text goes here. Very long text goes here. Very long text goes here. Very long text goes here. Very long text goes here. Very long text goes here.")
+		.transition()
+		.delay(1000)
+		.duration(500)
+		.attr("fill", "rgba(0,0,0,1)")
+		.style("color", "rgba(0,0,0,1)");

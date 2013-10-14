@@ -35,3 +35,8 @@ text {
 	fill: rgba(0,0,0,0.15);
 	cursor: pointer;
 }
+
+.svg-menu-text
+{
+	font-family: monospace;
+}
