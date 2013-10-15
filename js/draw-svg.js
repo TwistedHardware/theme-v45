@@ -1,9 +1,19 @@
 // Declare main objects in svg
 var svg_brand, svg_logo, svg_slogan, svg_menu, svg_menu_1, svg_menu_2, svg_page;
+var viewportwidth;
+var viewportheight;
+
+//Get window size
+getSize();
 
 // Prepare SVG
-var svg = 
+var svg_container =
 	d3.select("body").select("svg")
+		.attr("width", viewportwidth-10)
+		.attr("height", viewportheight-10);
+
+var svg = 
+	svg_container
 		.append("g")
 			.attr("transform", "translate(0,0)");
 
@@ -249,7 +259,7 @@ svg_page.append("rect")
 	.attr("rx", "6")
 	.attr("y", "25")
 	.attr("x", "150")
-	.attr("height", "550")
+	.attr("height", viewportheight - 40)
 	.attr("width", "1")
 	.attr("fill", "rgba(0,0,0,0)")
 	.attr("stroke", "rgba(99,99,99,0)")
@@ -259,7 +269,7 @@ svg_page.append("rect")
 		.delay(500)
 		.duration(500)
 		.attr("stroke", "rgba(99,99,99,1)")
-		.attr("width", "570")
+		.attr("width", viewportwidth - 240)
 		.attr("x", "220");
 
 svg_page.append("text")
@@ -283,7 +293,7 @@ svg_page.append("foreignObject")
 	.attr("fill", "rgba(255,0,0,0)")
 	.attr("x", "240")
 	.attr("y", "110")
-	.attr("width", "540")
+	.attr("width", viewportwidth - 270)
 	.attr("height", "1")
 	.style("color", "rgba(0,0,0,0)")
 	.html("Loading...")
@@ -291,14 +301,70 @@ svg_page.append("foreignObject")
 		.delay(1000)
 		.duration(500)
 		.attr("fill", "rgba(0,0,0,1)")
-		.attr("height", "460")
+		.attr("height", viewportheight - 140)
 		.style("color", "rgba(0,0,0,1)");
 
 d3.text("pages/page1.html", function(data){
 	svg_page.select("foreignObject")
 		.html("<div class='svg-contents'>" + data + "</div>");
 });
-		
+
+//Responsive
+
+
+window.onresize = responsiveSVG;
+
+//getSize();
+
+function getSize()
+{
+	// the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+	 
+	if (typeof window.innerWidth != 'undefined')
+	{
+	     viewportwidth = window.innerWidth,
+	     viewportheight = window.innerHeight
+	}
+	 
+	//IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+
+	else if (typeof document.documentElement != 'undefined'
+	    && typeof document.documentElement.clientWidth !=
+	    'undefined' && document.documentElement.clientWidth != 0)
+	{
+	      viewportwidth = document.documentElement.clientWidth,
+	      viewportheight = document.documentElement.clientHeight
+	}
+	 
+	// older versions of IE
+	 
+	else
+	{
+	      viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
+	      viewportheight = document.getElementsByTagName('body')[0].clientHeight
+	}
+
+}
+
+function responsiveSVG()
+{
+	getSize();
+	// Adjust SVG container
+	svg_container
+		.attr("width", viewportwidth-10)
+		.attr("height", viewportheight-10);
+	
+	svg_page.select("rect")
+		.transition()
+			.attr("width", viewportwidth - 240)
+			.attr("height", viewportheight - 40);
+
+	svg_page.select("foreignObject")
+		.transition()
+			.attr("width", viewportwidth - 270)
+			.attr("height", viewportheight - 140);
+}
+
 function openPage(d)
 {
 	//Update page title
@@ -310,18 +376,24 @@ function openPage(d)
 			.attr("fill", "rgba(255,0,0,1)");
 	
 	//update page contents
-	svg_page.select("foreignObject")
-		.transition()
-			.style("color", "rgba(0,0,0,0)");
-	
-	svg_page.select("foreignObject")
-	.html("Loading ...")
-		.transition()
-			.style("color", "rgba(0,0,0,1)");
-	
 	d3.text("pages/" + d.source, function(data){
 		svg_page.select("foreignObject")
-			.html("<div class='svg-contents'>" + data + "</div>");
+			.transition()
+				.duration(500)
+				.attr("height", "1")
+			.transition()
+				.duration(1000)
+				.attr("height", viewportheight - 140);
+		
+		svg_page.select("rect")
+			.transition()
+				.duration(400)
+				.attr("height", "65")
+			.transition()
+				.duration(1000)
+				.attr("height", viewportheight - 40);
+
 	});
+
 	//alert(d.source);
 }
