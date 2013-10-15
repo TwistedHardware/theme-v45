@@ -378,10 +378,10 @@ function openPage(d)
 	//update page contents
 	d3.text("pages/" + d.source, function(data){
 		svg_page.select("foreignObject")
+			.attr("height", "1")
+			.html("<div class='svg-contents'>" + data + "</div>")
 			.transition()
-				.duration(500)
-				.attr("height", "1")
-			.transition()
+				.delay(650)
 				.duration(1000)
 				.attr("height", viewportheight - 140);
 		
