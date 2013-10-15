@@ -283,7 +283,7 @@ svg_page.append("foreignObject")
 	.attr("fill", "rgba(255,0,0,0)")
 	.attr("x", "240")
 	.attr("y", "110")
-	.attr("width", "500")
+	.attr("width", "540")
 	.attr("height", "1")
 	.style("color", "rgba(0,0,0,0)")
 	.html("Loading...")
@@ -296,7 +296,7 @@ svg_page.append("foreignObject")
 
 d3.text("pages/page1.html", function(data){
 	svg_page.select("foreignObject")
-		.html(data);
+		.html("<div class='svg-contents'>" + data + "</div>");
 });
 		
 function openPage(d)
@@ -321,7 +321,7 @@ function openPage(d)
 	
 	d3.text("pages/" + d.source, function(data){
 		svg_page.select("foreignObject")
-			.html(data);
+			.html("<div class='svg-contents'>" + data + "</div>");
 	});
 	//alert(d.source);
 }
