@@ -29,7 +29,7 @@ svg_logo =
  */
 
 // Dynamic Text Branding
-d3.json("json/test.json", function(json) {
+d3.json("json/conf.json", function(json) {
 	
 	//Dynamic Text Logo
 	svg_logo = 
@@ -176,7 +176,7 @@ svg_menu.append("rect")
 
 */
 
-//Dynamic Text Branding
+//Dynamic Menu
 d3.json("json/menu.json", function(json) {
 	
 	//Dynamic Text Logo 
@@ -229,6 +229,7 @@ d3.json("json/menu.json", function(json) {
 			.attr("stroke", "rgba(99,99,99,1)")
 			.attr("stroke-width", "2")
 			.attr("class", "svg-menu-mask")
+			.on("click", openPage)
 			.transition()
 				.delay(function(d,i) { return 500 + i * 250 })
 				.duration(500)
@@ -269,7 +270,7 @@ svg_page.append("text")
 	.attr("x", "240")
 	.attr("y", "70")
 	.attr("text-anchor", "start")
-	.text("Page Title")
+	.text("Home")
 		.transition()
 		.delay(750)
 		.duration(500)
@@ -285,11 +286,42 @@ svg_page.append("foreignObject")
 	.attr("width", "500")
 	.attr("height", "1")
 	.style("color", "rgba(0,0,0,0)")
-	.html("Very long text goes here. Very long text goes here. Very long text goes here. Very long text goes here. Very long text goes here. Very long text goes here. Very long text goes here.")
+	.html("Loading...")
 		.transition()
 		.delay(1000)
 		.duration(500)
 		.attr("fill", "rgba(0,0,0,1)")
 		.attr("height", "460")
 		.style("color", "rgba(0,0,0,1)");
+
+d3.text("pages/page1.html", function(data){
+	svg_page.select("foreignObject")
+		.html(data);
+});
 		
+function openPage(d)
+{
+	//Update page title
+	svg_page.select("text")
+		.transition()
+			.attr("fill", "rgba(255,0,0,0)")
+		.transition()
+			.text(d.title)
+			.attr("fill", "rgba(255,0,0,1)");
+	
+	//update page contents
+	svg_page.select("foreignObject")
+		.transition()
+			.style("color", "rgba(0,0,0,0)");
+	
+	svg_page.select("foreignObject")
+	.html("Loading ...")
+		.transition()
+			.style("color", "rgba(0,0,0,1)");
+	
+	d3.text("pages/" + d.source, function(data){
+		svg_page.select("foreignObject")
+			.html(data);
+	});
+	//alert(d.source);
+}
