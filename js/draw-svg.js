@@ -305,7 +305,7 @@ svg_page.append("foreignObject")
 		.style("color", "rgba(0,0,0,1)");
 
 d3.text("pages/page1.html", function(data){
-	svg_page.select("foreignObject")
+	svg_page.select(".svg-p-text")
 		.html("<div class='svg-contents'>" + data + "</div>");
 });
 
@@ -359,7 +359,7 @@ function responsiveSVG()
 			.attr("width", viewportwidth - 240)
 			.attr("height", viewportheight - 40);
 
-	svg_page.select("foreignObject")
+	svg_page.select(".svg-p-text")
 		.transition()
 			.attr("width", viewportwidth - 270)
 			.attr("height", viewportheight - 140);
