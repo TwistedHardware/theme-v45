@@ -377,7 +377,7 @@ function openPage(d)
 	
 	//update page contents
 	d3.text("pages/" + d.source, function(data){
-		svg_page.select("foreignObject")
+		svg_page.select(".svg-p-text")
 			.attr("height", "1")
 			.html("<div class='svg-contents'>" + data + "</div>")
 			.transition()
