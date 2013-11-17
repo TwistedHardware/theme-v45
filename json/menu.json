@@ -1,6 +1,6 @@
 [ 
-	{"title": "Home", "target": "main", "source": "page1.html"}, 
-	{"title": "SVG for Web", "target": "main", "source": "page2.html"},
-	{"title": "Docs", "target": "main", "source": "page3.html"},
-	{"title": "About", "target": "main", "source": "page4.html"} 
+	{"title": "My Investments", "target": "main", "cType": "force", "source": "cl5000.json"}, 
+	{"title": "Show Market", "target": "main", "cType": "force", "source": "flare.json"},
+	{"title": "Stock Chart 1", "target": "main", "cType": "force", "source": "cl5000.json"},
+	{"title": "Stock Chart 2", "target": "main", "cType": "force", "source": "cl5000.json"} 
 ]
