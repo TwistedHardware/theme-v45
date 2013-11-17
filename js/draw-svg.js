@@ -437,8 +437,8 @@ function drawForceChart(dataSource)
 		.on("tick", tick)
 	    .linkDistance(60)
 	    .charge(-50)     // -20
-	    .gravity(.1)//0.1
-		.charge(function(d) { return d._children ? -d.cap / 10000000 : -30; })
+	    .gravity(-.01)//0.1
+		.charge(function(d) { return d._children ? -d.cap / 500 : -30; })
 		.linkDistance(function(d) { return d.target._children ? 80 : 30; })
 		.size([w, h + 160]);
 
@@ -449,14 +449,14 @@ function drawForceChart(dataSource)
 	tip = d3.tip()
 	    .attr('class', 'd3-tip')
 	    .offset([-10, 0])
-	    .html(function(d) { return "<div style='background-color: rgba(200,200,200,0.5);'><strong>" + d.name + "</strong><br /><span style='color:black'>" + d.sector + "</span><br /><span style='color:red'>" + d.fdate + "</span><br /><span style='color:blue'>" + d.cap + "</span></div>"; })
+	    .html(function(d) { return "<div style='background-color: rgba(255,255,255,0.85);'><strong>" + d.name + "</strong><br /><span style='color:black'>" + d.sector + "</span><br /><span style='color:red'>" + d.fdate + "</span><br /><span style='color:blue'>" + Humanize.compactInteger(d.cap) + "</span></div>"; })
     svg.call(tip);
 	
 	d3.json("pages/" + dataSource, function(json) {
 		root = json;
-		root.fixed = false;
+		root.fixed = true;
 		root.x = w / 2;
-		root.y = h / 2 + 80;
+		root.y = h / 2;
 		update();
 	});
 }
@@ -494,46 +494,36 @@ function update() {
 	  node.transition()
 	      .attr("r", function(d) { return d.children ? 4.5 : Math.sqrt(d.cap) / 20000; });
 
-	  // Enter any new nodes.
-	  var nodeEnter = node.enter().append("svg:circle")
-	      .attr("class", "node")
-	      .attr("cx", function(d) { return d.x; })
-	      .attr("cy", function(d) { return d.y; })
-	      .attr("r", function(d) { return d.children ? 4.5 : Math.sqrt(d.cap) / 20000; })
-          .on("mouseover", tip.show)
-          .on("mouseout", tip.hide)
-	      .style("fill", color)
-	      .on("click", click)
-	      .call(force.drag);
-
-	nodeEnter.append("circle")
-		.attr("r", function(d) { return v(d.cap) || 4.5; });
-	  
-	nodeEnter.append("text")
-      	.attr("x", 17)
-      	.attr("dy", ".35em")
-      	.style("font", "7px sans-serif")
-      	.text(function(d) { return d.name; });
-	
-	node.select("circle")
-    	.style("fill", color);
-      
 	  // Exit any old nodes.
 	  node.exit().remove();
+	  
+	  // Enter any new nodes.
+	var nodeEnter = node.enter().append("g")
+		.attr("class", "node")
+		.on("click", click)
+		.on("mouseover", tip.show)
+		.on("mouseout", tip.hide)
+		.call(force.drag); 
+
+	nodeEnter.append("circle")
+	    .style("fill", color)
+		.attr("r", function(d) { return v(d.cap) || 4.5; });
+	  
+	//nodeEnter.append("text")
+    //  	.attr("x", 17)
+    //  	.attr("dy", ".35em")
+    //  	.style("font", "7px sans-serif")
+    //  	.text(function(d) { return d.name; });
 	}
 
 function tick() {
-	link
-		.attr("x1", function(d) { return d.source.x; })
-		.attr("y1", function(d) { return d.source.y; })
-		.attr("x2", function(d) { return d.target.x; })
-		.attr("y2", function(d) { return d.target.y; });
+    link
+    	.attr("x1", function(d) { return d.source.x; })
+    	.attr("y1", function(d) { return d.source.y; })
+    	.attr("x2", function(d) { return d.target.x; })
+    	.attr("y2", function(d) { return d.target.y; });
 
-	node.attr("cx", function(d) {
-		return d.x;
-	}).attr("cy", function(d) {
-		return d.y;
-	});
+    node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
 }
 
 // Color leaf nodes orange, and packages white or blue.
@@ -543,31 +533,40 @@ function color(d) {
 
 // Toggle children on click.
 function click(d) {
-	if (d.children) {
-		d._children = d.children;
-		d.children = null;
-	} else {
-		d.children = d._children;
-		d._children = null;
-	}
-	update();
+    if (d3.event.defaultPrevented) return; // ignore drag
+    if (d.children) {
+        d._children = d.children;
+        d.children = null;
+    } else {
+        d.children = d._children;
+        d._children = null;
+    }
+    update();
 }
 
 // Returns a list of all nodes under the root.
 function flatten(root) {
-	var nodes = [], i = 0;
+    var nodes = [], i = 0;
 
-	function recurse(node) {
-		if (node.children)
-			node.size = node.children.reduce(function(p, v) {
-				return p + recurse(v);
-			}, 0);
-		if (!node.id)
-			node.id = ++i;
-		nodes.push(node);
-		return node.size;
-	}
+    function recurse(node) {
+        if (node.children) node.children.forEach(recurse);
+        if (!node.id) node.id = ++i;
+        nodes.push(node);
+    }
 
-	root.size = recurse(root);
-	return nodes;
+    recurse(root);
+    return nodes;
+}
+
+function flatten2(root) {
+    var nodes = [], i = 0;
+
+    function recurse(node) {
+        if (node.children) {node.children.forEach(recurse);    click2(node);}
+        if (!node.id) node.id = ++i;
+        //nodes.push(node);
+    }
+
+    recurse(root);
+    return nodes;
 }

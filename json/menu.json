@@ -1,6 +1,6 @@
 [ 
-	{"title": "My Investments", "target": "main", "cType": "force", "source": "cl5000.json"}, 
-	{"title": "Show Market", "target": "main", "cType": "force", "source": "flare.json"},
+	{"title": "My Investments", "target": "main", "cType": "html", "source": "page1.html"}, 
+	{"title": "Show Market", "target": "main", "cType": "force", "source": "cl5000.json"},
 	{"title": "Stock Chart 1", "target": "main", "cType": "force", "source": "cl5000.json"},
 	{"title": "Stock Chart 2", "target": "main", "cType": "force", "source": "cl5000.json"} 
 ]
