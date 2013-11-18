@@ -410,8 +410,8 @@ function openPage(d)
 // *** Force Chart ***
 
 
-var w,
-h,
+var width,
+height,
 v,
 node,
 link,
@@ -426,94 +426,89 @@ function drawForceChart(dataSource)
 	svg_page.select(".svg-p-text")
 		.attr("height", "1");
 	
-	w=viewportwidth - 270;
-	h=viewportheight - 140;
+	width=viewportwidth - 270;
+	height=viewportheight - 140;
 	
 	v = d3.scale.linear()
     	.domain([100000000,10000000000])
     	.range([3, 4]);
 	
 	force = d3.layout.force()
-		.on("tick", tick)
-	    .linkDistance(60)
+		.linkDistance(60)
 	    .charge(-50)     // -20
-	    .gravity(-.01)//0.1
-		.charge(function(d) { return d._children ? -d.cap / 500 : -30; })
-		.linkDistance(function(d) { return d.target._children ? 80 : 30; })
-		.size([w, h + 160]);
+	    .gravity(.1)//0.1
+	    .charge(-50)
+		.on("tick", tick)
+		.size([width, height - 160]);
 
 	vis = d3.select(".svg-chart")
-    	.attr("width", w)
-    	.attr("height", h-160);
+		.attr("x", 270)
+		.attr("y", 160)
+    	.attr("width", width)
+    	.attr("height", height-160);
 	
 	tip = d3.tip()
 	    .attr('class', 'd3-tip')
 	    .offset([-10, 0])
-	    .html(function(d) { return "<div style='background-color: rgba(255,255,255,0.85);'><strong>" + d.name + "</strong><br /><span style='color:black'>" + d.sector + "</span><br /><span style='color:red'>" + d.fdate + "</span><br /><span style='color:blue'>" + Humanize.compactInteger(d.cap) + "</span></div>"; })
+	    .html(function(d) { return "<div style='padding: 2px; border: solid black 1px; font-size: 1em; background-color: rgba(255,255,255,0.85);'><strong>" + d.name + "</strong><br /><span style='color:black'>" + d.sector + "</span><br /><span style='color:red'>" + d.fdate + "</span><br /><span style='color:blue'>" + Humanize.compactInteger(d.cap) + "</span></div>"; });
     svg.call(tip);
 	
+    link = svg.selectAll(".link");
+    node = svg.selectAll(".node");
+    
 	d3.json("pages/" + dataSource, function(json) {
 		root = json;
 		root.fixed = true;
-		root.x = w / 2;
-		root.y = h / 2;
+		root.x = width / 2;
+		root.y = height / 2;
 		update();
 	});
 }
 
 function update() {
-	  var nodes = flatten(root),
-	      links = d3.layout.tree().links(nodes);
+    var nodes = flatten(root),
+    links = d3.layout.tree().links(nodes);
 
-	  // Restart the force layout.
-	  force
-	      .nodes(nodes)
-	      .links(links)
-	      .start();
+//Restart the force layout.
+force
+    .nodes(nodes)
+    .links(links)
+    .start();
 
-	  // Update the links…
-	  link = vis.selectAll("line.link")
-	      .data(links, function(d) { return d.target.id; });
+//Update links.
+link = link.data(links, function(d) { return d.target.id; });
 
-	  // Enter any new links.
-	  link.enter().insert("svg:line", ".node")
-	      .attr("class", "link")
-	      .attr("x1", function(d) { return d.source.x; })
-	      .attr("y1", function(d) { return d.source.y; })
-	      .attr("x2", function(d) { return d.target.x; })
-	      .attr("y2", function(d) { return d.target.y; });
+link.exit().remove();
 
-	  // Exit any old links.
-	  link.exit().remove();
+link.enter().insert("line", ".node")
+    .attr("class", "link");
 
-	  // Update the nodes…
-	  node = vis.selectAll("circle.node")
-	      .data(nodes, function(d) { return d.id; })
-	      .style("fill", color);
+//Update nodes.
+node = node.data(nodes, function(d) { return d.id; });
 
-	  node.transition()
-	      .attr("r", function(d) { return d.children ? 4.5 : Math.sqrt(d.cap) / 20000; });
+node.exit().remove();
 
-	  // Exit any old nodes.
-	  node.exit().remove();
-	  
-	  // Enter any new nodes.
-	var nodeEnter = node.enter().append("g")
-		.attr("class", "node")
-		.on("click", click)
-		.on("mouseover", tip.show)
-		.on("mouseout", tip.hide)
-		.call(force.drag); 
+var nodeEnter = node.enter().append("g")
+    .attr("class", "node")
+    .on("click", click)
+    .on("mouseover", tip.show)
+    .on("mouseout", tip.hide)
+    .call(force.drag);
 
-	nodeEnter.append("circle")
-	    .style("fill", color)
-		.attr("r", function(d) { return v(d.cap) || 4.5; });
-	  
-	//nodeEnter.append("text")
-    //  	.attr("x", 17)
-    //  	.attr("dy", ".35em")
-    //  	.style("font", "7px sans-serif")
-    //  	.text(function(d) { return d.name; });
+nodeEnter.append("circle")
+//.attr("r", function(d) { return v(Math.sqrt(d.cap)) || 4.5; });
+    .attr("r", function(d) { return v(d.cap) || 4.5; });  // || 4.5 is necessary to get the collapsible node visible
+
+
+nodeEnter.append("text")
+    .attr("x", 17)
+    .attr("dy", ".35em")
+    .style("font", "7px sans-serif")
+    .text(function(d) { return d.name; });
+
+node.select("circle")
+    .style("fill", color);
+
 	}
 
 function tick() {
