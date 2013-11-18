@@ -251,7 +251,7 @@ d3.json("json/menu.json", function(json) {
 svg_page = 
 	svg.append("g")
 		.attr("transform", "translate(0,0)")
-		.attr("class", "");
+		.attr("class", "svg-chart");
 
 //Adding sattic page contets
 svg_page.append("rect")
@@ -376,15 +376,23 @@ function openPage(d)
 			.attr("fill", "rgba(255,0,0,1)");
 	
 	//update page contents
-	d3.text("pages/" + d.source, function(data){
-		svg_page.select(".svg-p-text")
-			.attr("height", "1")
-			.html("<div class='svg-contents'>" + data + "</div>")
-			.transition()
-				.delay(650)
-				.duration(1000)
-				.attr("height", viewportheight - 140);
-		
+	//choose chart type
+	if (d.cType == "force")
+	{
+		drawForceChart(d.source);
+	}
+	else
+	{
+		d3.text("pages/" + d.source, function(data){
+			svg_page.select(".svg-p-text")
+				.attr("height", "1")
+				.html("<div class='svg-contents'>" + data + "</div>")
+				.transition()
+					.delay(650)
+					.duration(1000)
+					.attr("height", viewportheight - 140);
+		});
+	}
 		svg_page.select("rect")
 			.transition()
 				.duration(400)
@@ -393,7 +401,167 @@ function openPage(d)
 				.duration(1000)
 				.attr("height", viewportheight - 40);
 
-	});
+	
 
 	//alert(d.source);
+}
+
+//These functions are to draw charts
+// *** Force Chart ***
+
+
+var width,
+height,
+v,
+node,
+link,
+root,
+force,
+vis,
+tip;
+
+function drawForceChart(dataSource)
+{
+	// Hide Text
+	svg_page.select(".svg-p-text")
+		.attr("height", "1");
+	
+	width=viewportwidth - 270;
+	height=viewportheight - 140;
+	
+	v = d3.scale.linear()
+    	.domain([100000000,10000000000])
+    	.range([3, 4]);
+	
+	force = d3.layout.force()
+		.linkDistance(60)
+	    .charge(-50)     // -20
+	    .gravity(.1)//0.1
+	    .charge(-50)
+		.on("tick", tick)
+		.size([width, height - 160]);
+
+	vis = d3.select(".svg-chart")
+		.attr("x", 270)
+		.attr("y", 160)
+    	.attr("width", width)
+    	.attr("height", height-160);
+	
+	tip = d3.tip()
+	    .attr('class', 'd3-tip')
+	    .offset([-10, 0])
+	    .html(function(d) { return "<div style='padding: 2px; border: solid black 1px; font-size: 1em; background-color: rgba(255,255,255,0.85);'><strong>" + d.name + "</strong><br /><span style='color:black'>" + d.sector + "</span><br /><span style='color:red'>" + d.fdate + "</span><br /><span style='color:blue'>" + Humanize.compactInteger(d.cap) + "</span></div>"; });
+    svg.call(tip);
+	
+    link = svg.selectAll(".link");
+    node = svg.selectAll(".node");
+    
+	d3.json("pages/" + dataSource, function(json) {
+		root = json;
+		root.fixed = true;
+		root.x = width / 2;
+		root.y = height / 2;
+		update();
+	});
+}
+
+function update() {
+    var nodes = flatten(root),
+    links = d3.layout.tree().links(nodes);
+
+//Restart the force layout.
+force
+    .nodes(nodes)
+    .links(links)
+    .start();
+
+//Update links.
+link = link.data(links, function(d) { return d.target.id; });
+
+link.exit().remove();
+
+link.enter().insert("line", ".node")
+    .attr("class", "link");
+
+//Update nodes.
+node = node.data(nodes, function(d) { return d.id; });
+
+node.exit().remove();
+
+var nodeEnter = node.enter().append("g")
+    .attr("class", "node")
+    .on("click", click)
+    .on("mouseover", tip.show)
+    .on("mouseout", tip.hide)
+    .call(force.drag);
+
+nodeEnter.append("circle")
+//.attr("r", function(d) { return v(Math.sqrt(d.cap)) || 4.5; });
+    .attr("r", function(d) { return v(d.cap) || 4.5; });  // || 4.5 is necessary to get the collapsible node visible
+
+
+nodeEnter.append("text")
+    .attr("x", 17)
+    .attr("dy", ".35em")
+    .style("font", "7px sans-serif")
+    .text(function(d) { return d.name; });
+
+node.select("circle")
+    .style("fill", color);
+
+	}
+
+function tick() {
+    link
+    	.attr("x1", function(d) { return d.source.x; })
+    	.attr("y1", function(d) { return d.source.y; })
+    	.attr("x2", function(d) { return d.target.x; })
+    	.attr("y2", function(d) { return d.target.y; });
+
+    node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+}
+
+// Color leaf nodes orange, and packages white or blue.
+function color(d) {
+	return d._children ? "#3182bd" : d.children ? "#c6dbef" : "#fd8d3c";
+}
+
+// Toggle children on click.
+function click(d) {
+    if (d3.event.defaultPrevented) return; // ignore drag
+    if (d.children) {
+        d._children = d.children;
+        d.children = null;
+    } else {
+        d.children = d._children;
+        d._children = null;
+    }
+    update();
+}
+
+// Returns a list of all nodes under the root.
+function flatten(root) {
+    var nodes = [], i = 0;
+
+    function recurse(node) {
+        if (node.children) node.children.forEach(recurse);
+        if (!node.id) node.id = ++i;
+        nodes.push(node);
+    }
+
+    recurse(root);
+    return nodes;
+}
+
+function flatten2(root) {
+    var nodes = [], i = 0;
+
+    function recurse(node) {
+        if (node.children) {node.children.forEach(recurse);    click2(node);}
+        if (!node.id) node.id = ++i;
+        //nodes.push(node);
+    }
+
+    recurse(root);
+    return nodes;
 }

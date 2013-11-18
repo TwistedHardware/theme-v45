@@ -1,0 +1,3105 @@
+{
+ "name": "k-means clusters", 
+ "children": [
+  {
+   "name": "cluster_18", 
+   "children": [
+    {
+     "sector": "Transportation", 
+     "name": "ABFS", 
+     "cap": 691110862.04, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Miscellaneous", 
+     "name": "ADS", 
+     "cap": 11338545018.36, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Public Utilities", 
+     "name": "AEE", 
+     "cap": 8666910448.12, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "ATLC", 
+     "cap": 53747138.4, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Miscellaneous", 
+     "name": "CATM", 
+     "cap": 1729399609.06, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Public Utilities", 
+     "name": "CBEY", 
+     "cap": 195183614.34, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "CCOI", 
+     "cap": 1662840057.72, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Transportation", 
+     "name": "CGI", 
+     "cap": 410615887.24, 
+     "fdate": "6/30/12"
+    }, 
+    {
+     "sector": "Transportation", 
+     "name": "CHRW", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }
+   ]
+  }, 
+  {
+   "name": "cluster_19", 
+   "children": [
+    {
+     "sector": "Health Care", 
+     "name": "ABIO", 
+     "cap": 16973681.1, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ACAD", 
+     "cap": 2048241481.62, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ACHN", 
+     "cap": 267699902.28, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ACRX", 
+     "cap": 351279832.56, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ACT", 
+     "cap": 19521434852, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Miscellaneous", 
+     "name": "ACTG", 
+     "cap": 801756275.1, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ACUR", 
+     "cap": 79507554.66, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "AFFX", 
+     "cap": 508872405.15, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "AGEN", 
+     "cap": 77330479.2, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ALXA", 
+     "cap": 89967148.92, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ALXN", 
+     "cap": 20705682522.32, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "AMAG", 
+     "cap": 465954691.37, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "AMPE", 
+     "cap": 308186793.7, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ANAC", 
+     "cap": 561720925.77, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ANIK", 
+     "cap": 375298875.92, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ANTH", 
+     "cap": 67285697.6, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "APPY", 
+     "cap": 42265128.6, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "APRI", 
+     "cap": 75442190.28, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ARIA", 
+     "cap": 544213795.02, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ARQL", 
+     "cap": 146144701.84, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ARRY", 
+     "cap": 620887807.9, 
+     "fdate": "6/30/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ARWR", 
+     "cap": 279121911.15, 
+     "fdate": "9/30/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ATHX", 
+     "cap": 99792752.5, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ATRS", 
+     "cap": 539153842, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "AUXL", 
+     "cap": 809427541.89, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "AVEO", 
+     "cap": 114249170.49, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "AXDX", 
+     "cap": 648003830.01, 
+     "fdate": "7/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "BDSI", 
+     "cap": 204657986.84, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "BIIB", 
+     "cap": 57770834110.51, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "BSPM", 
+     "cap": 11975729.61, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "BSTC", 
+     "cap": 120266290.55, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "BTX", 
+     "cap": 222482810.88, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "CADX", 
+     "cap": 480255087.6, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "CBRX", 
+     "cap": 77241689.4, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "CDXS", 
+     "cap": 67797773.86, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "CEMP", 
+     "cap": 396805435.52, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "CLDX", 
+     "cap": 1899975453.66, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "CLIR", 
+     "cap": 63398561.32, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "CLSN", 
+     "cap": 74004762.81, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "CLVS", 
+     "cap": 1547792409.6, 
+     "fdate": "12/31/12"
+    }
+   ]
+  }, 
+  {
+   "name": "cluster_5", 
+   "children": [
+    {
+     "sector": "Energy", 
+     "name": "ACI", 
+     "cap": 831984716.08, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "n/a", 
+     "name": "AMCO", 
+     "cap": 12661985.14, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "ANR", 
+     "cap": 1274861847.38, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "ARLP", 
+     "cap": 2815475823.18, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Public Utilities", 
+     "name": "CALL", 
+     "cap": 245765015.99, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "CDE", 
+     "cap": 1301988657.51, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Miscellaneous", 
+     "name": "CLCT", 
+     "cap": 134302275.2, 
+     "fdate": "6/30/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "CLD", 
+     "cap": 918010275.39, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "CLF", 
+     "cap": 3633668209.92, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "CLV", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "CMC", 
+     "cap": 2027314003.6, 
+     "fdate": "8/31/12"
+    }
+   ]
+  }, 
+  {
+   "name": "cluster_8", 
+   "children": [
+    {
+     "sector": "Energy", 
+     "name": "ALDW", 
+     "cap": 938162029.67, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "ALJ", 
+     "cap": 729488598, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Non-Durables", 
+     "name": "BEAM", 
+     "cap": 11295261904, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Non-Durables", 
+     "name": "BREW", 
+     "cap": 296367821.65, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Non-Durables", 
+     "name": "CCE", 
+     "cap": 11263040688.02, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "CHSCP", 
+     "cap": 214045907.77, 
+     "fdate": "8/31/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "CLMT", 
+     "cap": 2157846864.14, 
+     "fdate": "12/31/12"
+    }
+   ]
+  }, 
+  {
+   "name": "cluster_9", 
+   "children": [
+    {
+     "sector": "Consumer Services", 
+     "name": "ABCO", 
+     "cap": 2438811063.36, 
+     "fdate": "3/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ABTL", 
+     "cap": 80486365.36, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ACCL", 
+     "cap": 537242100.56, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ACIW", 
+     "cap": 2208132436.96, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ADBE", 
+     "cap": 0, 
+     "fdate": "11/30/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ADVS", 
+     "cap": 1728632780.4, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Miscellaneous", 
+     "name": "AKAM", 
+     "cap": 9299891865.6, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Public Utilities", 
+     "name": "AMBT", 
+     "cap": 37495244.25, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "AMSWA", 
+     "cap": 253070327.51, 
+     "fdate": "4/30/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "AOL", 
+     "cap": 2693313733.41, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "APEI", 
+     "cap": 659381120.55, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ASIA", 
+     "cap": 851198314.24, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ASUR", 
+     "cap": 31423572.8, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ATEA", 
+     "cap": 11120626.9, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ATVI", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "AWRE", 
+     "cap": 124139020.5, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AXR", 
+     "cap": 57635586.54, 
+     "fdate": "4/30/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "AZPN", 
+     "cap": 3246137334, 
+     "fdate": "6/30/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "BBGI", 
+     "cap": 195017355.58, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "BCOR", 
+     "cap": 1023813044.96, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "BCOV", 
+     "cap": 402428905.2, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "BLKB", 
+     "cap": 1859733394.35, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "BSFT", 
+     "cap": 1044517424.4, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "BWEN", 
+     "cap": 134211300.86, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "CA", 
+     "cap": 0, 
+     "fdate": "3/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "CALD", 
+     "cap": 407933880.37, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "CARB", 
+     "cap": 408758886.27, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "CBS", 
+     "cap": 33461820825.97, 
+     "fdate": "12/21/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "CCO", 
+     "cap": 3292279570, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "CCV", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "CERN", 
+     "cap": 0, 
+     "fdate": "12/29/12"
+    }, 
+    {
+     "sector": "Miscellaneous", 
+     "name": "CIDM", 
+     "cap": 92898571.5, 
+     "fdate": "3/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "CLUB", 
+     "cap": 320804141.9, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "CMCSK", 
+     "cap": 22030737818.04, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "CMLS", 
+     "cap": 1060062999.02, 
+     "fdate": "12/31/12"
+    }
+   ]
+  }, 
+  {
+   "name": "cluster_10", 
+   "children": [
+    {
+     "sector": "Finance", 
+     "name": "AAMC", 
+     "cap": 1224413640, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "ABCB", 
+     "cap": 427705336.01, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "ACFC", 
+     "cap": 10453146.54, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "ACNB", 
+     "cap": 103043652.8, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AEL", 
+     "cap": 1385453346.52, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "AGNCP", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AI", 
+     "cap": 417466820.34, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AIW", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "ALLB", 
+     "cap": 72315095.6, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "ANCB", 
+     "cap": 41590500, 
+     "fdate": "6/30/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "ANCX", 
+     "cap": 150503851.8, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "ANH", 
+     "cap": 673387211.64, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AROW", 
+     "cap": 318778182.14, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "ARR", 
+     "cap": 1609336136.52, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "ASBI", 
+     "cap": 39962288.24, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "ASRV", 
+     "cap": 58230982.8, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "ASRVP", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "ATLO", 
+     "cap": 212102598.14, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AUBN", 
+     "cap": 89982421.1, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BANC", 
+     "cap": 258187536.42, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BANCL", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BANCP", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BANF", 
+     "cap": 854685491.19, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BANR", 
+     "cap": 748827027.96, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BBCN", 
+     "cap": 1176882012.52, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BBNK", 
+     "cap": 268115198.4, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BCBP", 
+     "cap": 90773791.44, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BFIN", 
+     "cap": 194138087.2, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BKJ", 
+     "cap": 72287617.6, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BKMU", 
+     "cap": 302274168.84, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BKSC", 
+     "cap": 65066044.08, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BKU", 
+     "cap": 3291170087.32, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BKYF", 
+     "cap": 216201574.4, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BLMT", 
+     "cap": 127686892.8, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BMTC", 
+     "cap": 373319850.28, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BNCL", 
+     "cap": 783267884.84, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BNCN", 
+     "cap": 347505635.2, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BOCH", 
+     "cap": 84092957.52, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BOFI", 
+     "cap": 969779111.7, 
+     "fdate": "6/30/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BOH", 
+     "cap": 2521221163.56, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BOTJ", 
+     "cap": 27224127, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BPFH", 
+     "cap": 913324583.6, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BPFHW", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BRKL", 
+     "cap": 660922695.9, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BSRR", 
+     "cap": 241458827.76, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BUSE", 
+     "cap": 455164668, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "n/a", 
+     "name": "BVA", 
+     "cap": 12213528.8, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BYFC", 
+     "cap": 2142719.09, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CACC", 
+     "cap": 2628395207.3, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CARV", 
+     "cap": 35257140.18, 
+     "fdate": "3/31/12"
+    }, 
+    {
+     "sector": "Miscellaneous", 
+     "name": "CASS", 
+     "cap": 661606313.92, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CBAN", 
+     "cap": 54010407.27, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CBNJ", 
+     "cap": 116216160.06, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CBNK", 
+     "cap": 94837379.95, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CBSH", 
+     "cap": 4221968811.2, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CBU", 
+     "cap": 1446231709.8, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CFFI", 
+     "cap": 179809113.52, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CFNB", 
+     "cap": 183139889.31, 
+     "fdate": "6/30/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CFR", 
+     "cap": 4316342098.67, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CHFC", 
+     "cap": 856890115.2, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CHFN", 
+     "cap": 244813822.64, 
+     "fdate": "9/30/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CLBH", 
+     "cap": 34640730.34, 
+     "fdate": "12/31/12"
+    }
+   ]
+  }, 
+  {
+   "name": "cluster_11", 
+   "children": [
+    {
+     "sector": "Consumer Non-Durables", 
+     "name": "ADM", 
+     "cap": 25484116687.76, 
+     "fdate": "6/30/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "AES", 
+     "cap": 10545233144.94, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "AGX", 
+     "cap": 306693075.88, 
+     "fdate": "1/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AIG", 
+     "cap": 76770247268, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Public Utilities", 
+     "name": "ALE", 
+     "cap": 2012902624.89, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "AMRS", 
+     "cap": 196628066.82, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "ANDE", 
+     "cap": 1353693000, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Public Utilities", 
+     "name": "ARTNA", 
+     "cap": 196917707.34, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "ARTX", 
+     "cap": 35958174.16, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "AVHI", 
+     "cap": 283083257.7, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Public Utilities", 
+     "name": "AWK", 
+     "cap": 7486951075.31, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Public Utilities", 
+     "name": "AWR", 
+     "cap": 1101857137.92, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Non-Durables", 
+     "name": "BG", 
+     "cap": 11972488673.32, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "BIOF", 
+     "cap": 21710923.08, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "BMI", 
+     "cap": 749379437.8, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "CCC", 
+     "cap": 1080831949.44, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Public Utilities", 
+     "name": "CDZI", 
+     "cap": 79427165.84, 
+     "fdate": "12/31/12"
+    }
+   ]
+  }, 
+  {
+   "name": "cluster_12", 
+   "children": [
+    {
+     "sector": "Transportation", 
+     "name": "AAWW", 
+     "cap": 1163152512, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ACY", 
+     "cap": 31021008.96, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "AIR", 
+     "cap": 1120387208.2, 
+     "fdate": "5/31/12"
+    }, 
+    {
+     "sector": "Transportation", 
+     "name": "AIRM", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Transportation", 
+     "name": "ALGT", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Transportation", 
+     "name": "ALK", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "ATI", 
+     "cap": 3458864454.84, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "ATRO", 
+     "cap": 666724966.88, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Transportation", 
+     "name": "ATSG", 
+     "cap": 499272719.04, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "B", 
+     "cap": 1979751702.4, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Durables", 
+     "name": "BEAV", 
+     "cap": 8139601621.45, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Transportation", 
+     "name": "BRS", 
+     "cap": 0, 
+     "fdate": "3/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "BZC", 
+     "cap": 90652481.4, 
+     "fdate": "3/31/12"
+    }
+   ]
+  }, 
+  {
+   "name": "cluster_13", 
+   "children": [
+    {
+     "sector": "Finance", 
+     "name": "AAME", 
+     "cap": 86197170.2, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "ACE", 
+     "cap": 33154755864.08, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "ACGL", 
+     "cap": 7598290071.5, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AFH", 
+     "cap": 85791204.82, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AFSI", 
+     "cap": 2922565280.96, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AGIIL", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AGO", 
+     "cap": 3612146107.5, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AIZ", 
+     "cap": 4460570534, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AJG", 
+     "cap": 6164243693.3, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AMBC", 
+     "cap": 827145141.28, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AMP", 
+     "cap": 19602996032.56, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "ANAT", 
+     "cap": 2725391748.96, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AON", 
+     "cap": 23090339950.1, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AWH", 
+     "cap": 3611051296.08, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AXS", 
+     "cap": 5351544543.34, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BWINA", 
+     "cap": 380415273, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BWINB", 
+     "cap": 337747413.39, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CB", 
+     "cap": 23803731378.96, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CIA", 
+     "cap": 465260182.12, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CINF", 
+     "cap": 8175230685.9, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CLMS", 
+     "cap": 208796924.07, 
+     "fdate": "12/31/12"
+    }
+   ]
+  }, 
+  {
+   "name": "cluster_14", 
+   "children": [
+    {
+     "sector": "Technology", 
+     "name": "AAN", 
+     "cap": 2149630417.38, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "AAP", 
+     "cap": 7170816531.45, 
+     "fdate": "12/29/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "AAPL", 
+     "cap": 0, 
+     "fdate": "9/29/12"
+    }, 
+    {
+     "sector": "Consumer Durables", 
+     "name": "ABG", 
+     "cap": 1686951856.6, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "AFCE", 
+     "cap": 1048995543.96, 
+     "fdate": "12/30/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "ALCS", 
+     "cap": 45430521.61, 
+     "fdate": "1/29/12"
+    }, 
+    {
+     "sector": "Consumer Durables", 
+     "name": "AN", 
+     "cap": 6059695978.38, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "APP", 
+     "cap": 130207710.06, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "ARDNA", 
+     "cap": 405064900, 
+     "fdate": "12/29/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "ARKR", 
+     "cap": 68599855.06, 
+     "fdate": "9/29/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "ARO", 
+     "cap": 714230908.3, 
+     "fdate": "3/28/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "ASNA", 
+     "cap": 3132720763.12, 
+     "fdate": "7/28/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "AZO", 
+     "cap": 15442121277.21, 
+     "fdate": "8/25/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "BAGL", 
+     "cap": 311590056.96, 
+     "fdate": "1/3/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "BAMM", 
+     "cap": 37637039.65, 
+     "fdate": "1/28/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "BBW", 
+     "cap": 122028249.49, 
+     "fdate": "12/29/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "BBY", 
+     "cap": 14620061465.49, 
+     "fdate": "3/3/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "BDL", 
+     "cap": 19115115.16, 
+     "fdate": "9/29/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "BGFV", 
+     "cap": 367508901.76, 
+     "fdate": "1/1/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "BGFV", 
+     "cap": 367508901.76, 
+     "fdate": "12/30/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "BH", 
+     "cap": 597479044.5, 
+     "fdate": "9/26/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "BIG", 
+     "cap": 2151445033.77, 
+     "fdate": "1/28/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "BJRI", 
+     "cap": 804959712.8, 
+     "fdate": "1/3/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "BLMN", 
+     "cap": 2791731672.96, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "BODY", 
+     "cap": 91435093.56, 
+     "fdate": "12/29/12"
+    }, 
+    {
+     "sector": "Consumer Durables", 
+     "name": "BSET", 
+     "cap": 160045565.8, 
+     "fdate": "11/24/12"
+    }, 
+    {
+     "sector": "Consumer Non-Durables", 
+     "name": "BWS", 
+     "cap": 997374120.12, 
+     "fdate": "1/28/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "CAB", 
+     "cap": 4505181777.6, 
+     "fdate": "12/29/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "CACH", 
+     "cap": 137547737.35, 
+     "fdate": "12/29/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "CATO", 
+     "cap": 865030844.48, 
+     "fdate": "3/27/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "CEC", 
+     "cap": 821603643.23, 
+     "fdate": "1/1/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "CHS", 
+     "cap": 2627745662.32, 
+     "fdate": "1/28/12"
+    }
+   ]
+  }, 
+  {
+   "name": "cluster_15", 
+   "children": [
+    {
+     "sector": "Consumer Services", 
+     "name": "AAT", 
+     "cap": 1340770910.7, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "ACC", 
+     "cap": 3822422444.16, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "ACRE", 
+     "cap": 350556672.63, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "ADC", 
+     "cap": 413762625, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "AEC", 
+     "cap": 776999715.8, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "AHT", 
+     "cap": 1071534396.8, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "ALEX", 
+     "cap": 1702466748, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "AMT", 
+     "cap": 31406224032.58, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "AQQ", 
+     "cap": 7662538.36, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "ARCP", 
+     "cap": 2481294534.36, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "ARE", 
+     "cap": 4696416557.96, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "ARI", 
+     "cap": 580176935.91, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "ATAX", 
+     "cap": 300265954.56, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "BDN", 
+     "cap": 2139006733.5, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "BMR", 
+     "cap": 3738828919.42, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "BRT", 
+     "cap": 102538939.88, 
+     "fdate": "9/30/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "BXMT", 
+     "cap": 720041275, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "BXP", 
+     "cap": 16302570298.92, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CCG", 
+     "cap": 659332936.92, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "CCI", 
+     "cap": 21851776390.32, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "CHCI", 
+     "cap": 40637250.36, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "CHLN", 
+     "cap": 99996807.15, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "CHSP", 
+     "cap": 1160753583.25, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "CLI", 
+     "cap": 1901902928.76, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "CLNY", 
+     "cap": 1347560741.58, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Non-Durables", 
+     "name": "CMFO", 
+     "cap": 17536555.84, 
+     "fdate": "12/31/12"
+    }
+   ]
+  }, 
+  {
+   "name": "cluster_0", 
+   "children": [
+    {
+     "sector": "Capital Goods", 
+     "name": "A", 
+     "cap": 17197875092.19, 
+     "fdate": "10/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "AA", 
+     "cap": 9198578068.6, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "AAON", 
+     "cap": 997498068.28, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "AA^", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "ABAX", 
+     "cap": 864880276.25, 
+     "fdate": "3/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ABC", 
+     "cap": 14747782146.66, 
+     "fdate": "9/30/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "ABM", 
+     "cap": 1568569014.2, 
+     "fdate": "10/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ABMD", 
+     "cap": 798606170.49, 
+     "fdate": "3/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "ACAT", 
+     "cap": 797044994.68, 
+     "fdate": "3/31/12"
+    }, 
+    {
+     "sector": "Consumer Durables", 
+     "name": "ACCO", 
+     "cap": 802168728.98, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Durables", 
+     "name": "ACET", 
+     "cap": 476050545, 
+     "fdate": "6/30/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "ACFN", 
+     "cap": 76245553.71, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ACLS", 
+     "cap": 246039309.26, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "ACM", 
+     "cap": 3295284590.64, 
+     "fdate": "9/30/12"
+    }, 
+    {
+     "sector": "Miscellaneous", 
+     "name": "ACN", 
+     "cap": 49686974698.5, 
+     "fdate": "8/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ADEP", 
+     "cap": 109129346.84, 
+     "fdate": "6/30/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ADI", 
+     "cap": 0, 
+     "fdate": "11/3/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ADP", 
+     "cap": 0, 
+     "fdate": "6/30/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "ADT", 
+     "cap": 8595515921.28, 
+     "fdate": "9/28/12"
+    }, 
+    {
+     "sector": "Public Utilities", 
+     "name": "ADTN", 
+     "cap": 1476992182.2, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "AEHR", 
+     "cap": 29877886.8, 
+     "fdate": "5/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "AEIS", 
+     "cap": 783703093.03, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "AEPI", 
+     "cap": 353831973.22, 
+     "fdate": "10/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AFL", 
+     "cap": 30463545584.5, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "n/a", 
+     "name": "AFM", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "AGCO", 
+     "cap": 6183309618.4, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "AHPI", 
+     "cap": 19112637.01, 
+     "fdate": "6/30/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "ALB", 
+     "cap": 5436658645.89, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ALOT", 
+     "cap": 82339071.33, 
+     "fdate": "1/31/12"
+    }, 
+    {
+     "sector": "Public Utilities", 
+     "name": "ALSK", 
+     "cap": 121766658.12, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ALTR", 
+     "cap": 11967428462.16, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "AMAT", 
+     "cap": 0, 
+     "fdate": "10/28/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "AMCC", 
+     "cap": 1023561812, 
+     "fdate": "3/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "AMD", 
+     "cap": 2426452120.42, 
+     "fdate": "12/29/12"
+    }, 
+    {
+     "sector": "Consumer Durables", 
+     "name": "AME", 
+     "cap": 11310032704.96, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "AMOT", 
+     "cap": 72096481.1, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "AMRC", 
+     "cap": 490826696.64, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Durables", 
+     "name": "AMSC", 
+     "cap": 149605778.37, 
+     "fdate": "3/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ANAD", 
+     "cap": 174352479.51, 
+     "fdate": "3/15/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "AOSL", 
+     "cap": 204042183.52, 
+     "fdate": "6/30/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "APD", 
+     "cap": 23199399137.64, 
+     "fdate": "9/30/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "APH", 
+     "cap": 13105104879.18, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "API", 
+     "cap": 20403195.74, 
+     "fdate": "3/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "APOL", 
+     "cap": 2360508200, 
+     "fdate": "8/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "APT", 
+     "cap": 28857493.73, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "APU", 
+     "cap": 4180817236.56, 
+     "fdate": "9/30/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ARAY", 
+     "cap": 578747790.04, 
+     "fdate": "6/30/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "ARG", 
+     "cap": 8197105078.56, 
+     "fdate": "3/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ARTC", 
+     "cap": 1052104368.28, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ARUN", 
+     "cap": 2184171728.38, 
+     "fdate": "7/31/12"
+    }, 
+    {
+     "sector": "Consumer Non-Durables", 
+     "name": "ARW", 
+     "cap": 5012133827.01, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ARX", 
+     "cap": 679541520, 
+     "fdate": "6/30/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ASYS", 
+     "cap": 77363187.74, 
+     "fdate": "9/30/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "AT", 
+     "cap": 604804515.84, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ATEC", 
+     "cap": 188370284.9, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "ATK", 
+     "cap": 3315179242.08, 
+     "fdate": "3/31/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "ATMI", 
+     "cap": 891012106.95, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ATNY", 
+     "cap": 163989943.65, 
+     "fdate": "11/30/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ATRI", 
+     "cap": 543444640.09, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "ATRM", 
+     "cap": 4172421.15, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Durables", 
+     "name": "ATX", 
+     "cap": 254326325.76, 
+     "fdate": "12/29/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "AVAV", 
+     "cap": 560986352.98, 
+     "fdate": "4/30/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "AVNW", 
+     "cap": 134740020.24, 
+     "fdate": "6/29/12"
+    }, 
+    {
+     "sector": "Consumer Non-Durables", 
+     "name": "AVT", 
+     "cap": 5809816414.32, 
+     "fdate": "6/30/12"
+    }, 
+    {
+     "sector": "Consumer Non-Durables", 
+     "name": "AXE", 
+     "cap": 2881450117.7, 
+     "fdate": "12/28/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "AXL", 
+     "cap": 1426760224.89, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "AXTI", 
+     "cap": 74018850.21, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Durables", 
+     "name": "AYI", 
+     "cap": 4396021419.6, 
+     "fdate": "8/31/12"
+    }, 
+    {
+     "sector": "Consumer Durables", 
+     "name": "AZZ", 
+     "cap": 1110231858.96, 
+     "fdate": "2/29/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "BASI", 
+     "cap": 14194561.6, 
+     "fdate": "9/30/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "BBOX", 
+     "cap": 493025821.1, 
+     "fdate": "3/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "BBSI", 
+     "cap": 542387224.96, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "BC", 
+     "cap": 4032634897.5, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "BCC", 
+     "cap": 1056959647.5, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "BCPC", 
+     "cap": 1735263883.46, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "BDR", 
+     "cap": 5768035.97, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "BECN", 
+     "cap": 1733367489.45, 
+     "fdate": "9/30/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "BELFA", 
+     "cap": 201611855.13, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "BGC", 
+     "cap": 1625631789.87, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BGCP", 
+     "cap": 934979491.2, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "BGG", 
+     "cap": 908281940.28, 
+     "fdate": "7/1/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "BHE", 
+     "cap": 1252409625.7, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Miscellaneous", 
+     "name": "BID", 
+     "cap": 3565827529.9, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "BIOL", 
+     "cap": 69967428.65, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "BIRT", 
+     "cap": 384473514.82, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "BLDR", 
+     "cap": 608434108.22, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "BOOM", 
+     "cap": 299006677.18, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Miscellaneous", 
+     "name": "BR", 
+     "cap": 4035530308.8, 
+     "fdate": "6/30/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "BRCD", 
+     "cap": 3674687634.18, 
+     "fdate": "10/27/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "BRCM", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "BRKR", 
+     "cap": 3473360188.98, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "BSDM", 
+     "cap": 48594075.53, 
+     "fdate": "8/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "BTUI", 
+     "cap": 38084007.36, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "BVX", 
+     "cap": 49913740.8, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "BWA", 
+     "cap": 12094470644.85, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "BXC", 
+     "cap": 160155820.9, 
+     "fdate": "12/29/12"
+    }, 
+    {
+     "sector": "Consumer Durables", 
+     "name": "BZ", 
+     "cap": 1264057111.03, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "CAAS", 
+     "cap": 215370385.92, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "CADC", 
+     "cap": 8430558.57, 
+     "fdate": "6/30/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "CAH", 
+     "cap": 18917071461.82, 
+     "fdate": "6/30/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "CALI", 
+     "cap": 11341789.58, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Non-Durables", 
+     "name": "CALM", 
+     "cap": 1241341464.51, 
+     "fdate": "6/2/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "CALX", 
+     "cap": 646185839, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "CAMP", 
+     "cap": 901011462.12, 
+     "fdate": "2/28/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "CAS", 
+     "cap": 340203234.9, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Non-Durables", 
+     "name": "CAW", 
+     "cap": 22071054.6, 
+     "fdate": "11/30/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "CBAK", 
+     "cap": 32307430.28, 
+     "fdate": "9/30/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CBOE", 
+     "cap": 4347336785.48, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "CBR", 
+     "cap": 248672325.96, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "CDI", 
+     "cap": 317038407.21, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "CDNS", 
+     "cap": 4124249764.6, 
+     "fdate": "12/29/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "CDTI", 
+     "cap": 14956663.33, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "CECE", 
+     "cap": 324476414.64, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Durables", 
+     "name": "CENT", 
+     "cap": 374002467.6, 
+     "fdate": "9/29/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "CEVA", 
+     "cap": 311094038.7, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "CFI", 
+     "cap": 237238428.9, 
+     "fdate": "4/29/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "CFN", 
+     "cap": 8355107154.04, 
+     "fdate": "6/30/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "CGA", 
+     "cap": 146335259.8, 
+     "fdate": "6/30/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "CGNX", 
+     "cap": 2681142813.64, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Non-Durables", 
+     "name": "CHEF", 
+     "cap": 626375299.52, 
+     "fdate": "12/28/12"
+    }, 
+    {
+     "sector": "Consumer Durables", 
+     "name": "CHGS", 
+     "cap": 7236821.88, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Miscellaneous", 
+     "name": "CHYR", 
+     "cap": 46369504.72, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "CIR", 
+     "cap": 1125877689.72, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Durables", 
+     "name": "CKP", 
+     "cap": 737834437.26, 
+     "fdate": "3/2/12"
+    }, 
+    {
+     "sector": "Consumer Non-Durables", 
+     "name": "CL", 
+     "cap": 57757192309.08, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "CLRO", 
+     "cap": 76454105.2, 
+     "fdate": "12/31/12"
+    }
+   ]
+  }, 
+  {
+   "name": "cluster_17", 
+   "children": [
+    {
+     "sector": "Health Care", 
+     "name": "ABBV", 
+     "cap": 76655478805.4, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ABT", 
+     "cap": 57285060585.3, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ACHC", 
+     "cap": 2020046182.17, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ADNC", 
+     "cap": 269948926.8, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ADUS", 
+     "cap": 346788857.94, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "AHS", 
+     "cap": 620940756.66, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "AIQ", 
+     "cap": 331891671.58, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ALR", 
+     "cap": 2580973527.44, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "AMED", 
+     "cap": 550622043, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "AMGN", 
+     "cap": 85611399590.76, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "AMS", 
+     "cap": 11292192.39, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "AMSG", 
+     "cap": 1377483963.87, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ANCI", 
+     "cap": 10087134.16, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "ASGN", 
+     "cap": 1851106675.66, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ATRC", 
+     "cap": 262670764.36, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "BAX", 
+     "cap": 35416834263, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "BCR", 
+     "cap": 9982043597.26, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "BDMS", 
+     "cap": 35180362, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "BIOS", 
+     "cap": 550369466.92, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "BMY", 
+     "cap": 81114366087.69, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BRO", 
+     "cap": 4813567402.82, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "BSX", 
+     "cap": 16409918410.34, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "CBMX", 
+     "cap": 13360615.74, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "CCRN", 
+     "cap": 186509832, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "CELG", 
+     "cap": 65487478913.07, 
+     "fdate": "12/31/12"
+    }
+   ]
+  }, 
+  {
+   "name": "cluster_6", 
+   "children": [
+    {
+     "sector": "Consumer Services", 
+     "name": "ABCD", 
+     "cap": 63320899.5, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "AMCF", 
+     "cap": 16269262.35, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "ARII", 
+     "cap": 864981551.47, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Transportation", 
+     "name": "BALT", 
+     "cap": 193912263.36, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "CAP", 
+     "cap": 548051491.4, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "CAR", 
+     "cap": 3214828078, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "CFX", 
+     "cap": 5733549613.3, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Transportation", 
+     "name": "CKH", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Technology", 
+     "name": "CLNT", 
+     "cap": 22842833.04, 
+     "fdate": "12/31/12"
+    }
+   ]
+  }, 
+  {
+   "name": "cluster_2", 
+   "children": [
+    {
+     "sector": "Consumer Services", 
+     "name": "AHC", 
+     "cap": 185198472.7, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "ALV", 
+     "cap": 8864272443.12, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Durables", 
+     "name": "ASH", 
+     "cap": 7060412179.75, 
+     "fdate": "9/30/12"
+    }, 
+    {
+     "sector": "Consumer Non-Durables", 
+     "name": "AVP", 
+     "cap": 9150166666.8, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AXP", 
+     "cap": 86740625641.2, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Transportation", 
+     "name": "BCO", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "BLC", 
+     "cap": 1425162677.4, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BPOPM", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BPOPN", 
+     "cap": 233400000, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "CAM", 
+     "cap": 15837687701.55, 
+     "fdate": "2/15/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "CHE", 
+     "cap": 1337830723.75, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CMA", 
+     "cap": 7820176828.52, 
+     "fdate": "12/31/12"
+    }
+   ]
+  }, 
+  {
+   "name": "cluster_3", 
+   "children": [
+    {
+     "sector": "Consumer Durables", 
+     "name": "AIT", 
+     "cap": 2211935864.62, 
+     "fdate": "6/30/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "ALIM", 
+     "cap": 68869010.02, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BK", 
+     "cap": 36378072937.8, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CCBG", 
+     "cap": 208728714.88, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "CCL", 
+     "cap": 27039005341.56, 
+     "fdate": "11/30/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CHCO", 
+     "cap": 708911602, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CHEV", 
+     "cap": 75547778.15, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CIZN", 
+     "cap": 88636074.8, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "CKEC", 
+     "cap": 520998228.03, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Durables", 
+     "name": "CLX", 
+     "cap": 11151748327.5, 
+     "fdate": "6/30/12"
+    }
+   ]
+  }, 
+  {
+   "name": "cluster_16", 
+   "children": [
+    {
+     "sector": "Public Utilities", 
+     "name": "ACMP", 
+     "cap": 10204432947.36, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Basic Industries", 
+     "name": "ACO", 
+     "cap": 1078345077.45, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "APAGF", 
+     "cap": 441618600, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "APC", 
+     "cap": 48274829235.27, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "ARP", 
+     "cap": 1218505650, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Public Utilities", 
+     "name": "ATO", 
+     "cap": 3902061083.55, 
+     "fdate": "9/30/12"
+    }, 
+    {
+     "sector": "Public Utilities", 
+     "name": "AVA", 
+     "cap": 1639402813.11, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Health Care", 
+     "name": "AXGN", 
+     "cap": 77129725.5, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "BCEI", 
+     "cap": 2273799295.92, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Non-Durables", 
+     "name": "BDE", 
+     "cap": 454252397.28, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "BHI", 
+     "cap": 24810399992, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "BKEPP", 
+     "cap": 272646020.32, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "BPT", 
+     "cap": 1829272000, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "BRN", 
+     "cap": 28494123.3, 
+     "fdate": "9/30/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "BRY", 
+     "cap": 2513406015.09, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Public Utilities", 
+     "name": "BWP", 
+     "cap": 7673710921.55, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CACG", 
+     "cap": 98962500, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CACGU", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "CAK", 
+     "cap": 149021721.5, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "CEP", 
+     "cap": 70346665.35, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "n/a", 
+     "name": "CEQP", 
+     "cap": 2615515285.1, 
+     "fdate": "9/30/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "CHK", 
+     "cap": 18667952828.25, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "CHKR", 
+     "cap": 678342500, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "CLB", 
+     "cap": 8897495504.48, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Energy", 
+     "name": "CLR", 
+     "cap": 21979603846.4, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Public Utilities", 
+     "name": "CMLP", 
+     "cap": 3550322415.33, 
+     "fdate": "12/31/12"
+    }
+   ]
+  }, 
+  {
+   "name": "cluster_7", 
+   "children": [
+    {
+     "sector": "Health Care", 
+     "name": "ANIP", 
+     "cap": 112653974.6, 
+     "fdate": "12/31/12"
+    }
+   ]
+  }, 
+  {
+   "name": "cluster_1", 
+   "children": [
+    {
+     "sector": "Technology", 
+     "name": "ACXM", 
+     "cap": 2395847275.9, 
+     "fdate": "3/31/12"
+    }, 
+    {
+     "sector": "Capital Goods", 
+     "name": "ASTE", 
+     "cap": 839588358.4, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CFBK", 
+     "cap": 23260853.7, 
+     "fdate": "12/31/12"
+    }
+   ]
+  }, 
+  {
+   "name": "cluster_4", 
+   "children": [
+    {
+     "sector": "Finance", 
+     "name": "AB", 
+     "cap": 2280119741.5, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Consumer Services", 
+     "name": "ABR", 
+     "cap": 341010606.5, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "n/a", 
+     "name": "ACAS", 
+     "cap": 4192407319.32, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AFA", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AFG", 
+     "cap": 4929740872.53, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "AFQ", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "n/a", 
+     "name": "AIB", 
+     "cap": 0, 
+     "fdate": "3/31/12"
+    }, 
+    {
+     "sector": "n/a", 
+     "name": "AINV", 
+     "cap": 1905806656.48, 
+     "fdate": "3/31/12"
+    }, 
+    {
+     "sector": "n/a", 
+     "name": "AIY", 
+     "cap": 0, 
+     "fdate": "3/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "APO", 
+     "cap": 4737932238, 
+     "fdate": "12/13/12"
+    }, 
+    {
+     "sector": "n/a", 
+     "name": "ARU", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "n/a", 
+     "name": "ARY", 
+     "cap": 0, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "BEN", 
+     "cap": 34205623499.7, 
+     "fdate": "9/30/12"
+    }, 
+    {
+     "sector": "n/a", 
+     "name": "BKCC", 
+     "cap": 706779013.36, 
+     "fdate": "12/31/12"
+    }, 
+    {
+     "sector": "Finance", 
+     "name": "CIFC", 
+     "cap": 163726172.04, 
+     "fdate": "12/31/12"
+    }
+   ]
+  }
+ ]
+}
