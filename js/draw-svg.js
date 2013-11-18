@@ -337,7 +337,7 @@ function showMenu()
                 //Dynamic Menu
                 d3.json("json/menu.json", function(json) {
                         
-                        //Dynamic Text Logo
+                        //Dynamic Popup Menu
                         svg_popupMenu.selectAll(".svg-menu-item")
                                         .data(json)
                                 .enter().append("rect")
@@ -348,12 +348,12 @@ function showMenu()
                                         .attr("y", function(d,i) { return (yOffset + (i * 50)); })
                                         .attr("height", "40")
                                         .attr("width", "1")
-                                        .attr("fill", "rgba(0,0,0,.05)")
+                                        .attr("fill", "rgba(240,240,240,1)")
                                         .attr("stroke", "rgba(99,99,99,1)")
                                         .attr("stroke-width", "2")
                                         .attr("class", "svg-menu-item")
                                         .transition()
-                                                .delay(function(d,i) { return 500 + i * 250 })
+                                                .delay(function(d,i) { return i * 250; })
                                                 .duration(500)
                                                 .attr("width", "200")
                                                 .attr("x", xOffset);
@@ -369,7 +369,7 @@ function showMenu()
                                         .attr("text-anchor", "start")
                                         .text(function(d) { return d.title })
                                                 .transition()
-                                                .delay(function(d,i) { return 500 + i * 250 })
+                                                .delay(function(d,i) { return i * 250; })
                                                 .duration(500)
                                                 .attr("fill", "rgba(255,0,0,1");
                         
@@ -389,7 +389,7 @@ function showMenu()
                                         .attr("class", "svg-menu-mask")
                                         .on("click", openPage)
                                         .transition()
-                                                .delay(function(d,i) { return 500 + i * 250 })
+                                                .delay(function(d,i) { return i * 250; })
                                                 .duration(500)
                                                 .attr("width", "200")
                                                 .attr("x", xOffset);
