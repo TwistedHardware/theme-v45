@@ -2,6 +2,7 @@
 var svg_brand, svg_logo, svg_slogan, svg_menu, svg_menu_1, svg_menu_2, svg_page;
 var viewportwidth;
 var viewportheight;
+var svg_popupMenu;
 
 //Get window size
 getSize();
@@ -77,7 +78,7 @@ d3.json("json/conf.json", function(json) {
 				.attr("x", "10");
 });
 
-//Add g for branding
+//Add g for Menu
 svg_menu = 
 	svg.append("g")
 		.attr("transform", "translate(0,0)")
@@ -265,6 +266,7 @@ svg_page.append("rect")
 	.attr("stroke", "rgba(99,99,99,0)")
 	.attr("stroke-width", "2")
 	.attr("class", "svg-menu-item")
+	.on("click", showMenu)
 	.transition()
 		.delay(500)
 		.duration(500)
@@ -296,6 +298,7 @@ svg_page.append("foreignObject")
 	.attr("width", viewportwidth - 270)
 	.attr("height", "1")
 	.style("color", "rgba(0,0,0,0)")
+	.on("click", showMenu)
 	.html("Loading...")
 		.transition()
 		.delay(1000)
@@ -310,12 +313,103 @@ d3.text("pages/page1.html", function(data){
 });
 
 //Responsive
-
-
 window.onresize = responsiveSVG;
 
-//getSize();
+//Show Popup Menu
+var menuVisible=false;
+function showMenu()
+{
+	var json_data;
+	if (menuVisible)
+	{
+		json_data = ""; 
+		svg.select(".svg-menu-popup").remove();
+	}
+	else
+	{
+		var xOffset = d3.mouse(this)[0];
+		var yOffset = d3.mouse(this)[1];
+		
+		//Dynamic Popup Menu
+		svg_popupMenu = 
+			svg.append("g")
+				.attr("transform", "translate(0,0)")
+				.attr("class", "svg-menu-popup");
+		
+		//Dynamic Menu
+		d3.json("json/menu.json", function(json) {
+			
+			//Dynamic Text Logo 
+			svg_popupMenu.selectAll(".svg-menu-item")
+					.data(json)
+				.enter().append("rect")
+					.attr("class", "svg-menu-item")
+					.attr("rx", "6")
+					.attr("ry", "6")
+					.attr("x", xOffset-5)
+					.attr("y", function(d,i) { return (yOffset + (i * 50));  })
+					.attr("height", "40")
+					.attr("width", "1")
+					.attr("fill", "rgba(0,0,0,.05)")
+					.attr("stroke", "rgba(99,99,99,1)")
+					.attr("stroke-width", "2")
+					.attr("class", "svg-menu-item")
+					.transition()
+						.delay(function(d,i) { return 500 + i * 250 })
+						.duration(500)
+						.attr("width", "200")
+						.attr("x", xOffset);
 
+			svg_popupMenu.selectAll(".svg-menu-text")
+					.data(json)
+				.enter().append("text")
+					.attr("class", "svg-menu-text")
+					.attr("font-size", "20px")
+					.attr("fill", "rgba(255,0,0,0")
+					.attr("x", xOffset+20)
+					.attr("y", function(d,i) { return (yOffset+26 + (i * 50));  })
+					.attr("text-anchor", "start")
+					.text(function(d) { return d.title })
+						.transition()
+						.delay(function(d,i) { return 500 + i * 250 })
+						.duration(500)
+						.attr("fill", "rgba(255,0,0,1");
+			
+			svg_popupMenu.selectAll(".svg-menu-mask")
+					.data(json)
+				.enter().append("rect")
+					.attr("class", "svg-menu-mask")
+					.attr("ry", "6")
+					.attr("rx", "6")
+					.attr("y", function(d,i) { return (yOffset + (i * 50));  })
+					.attr("x", xOffset-5)
+					.attr("height", "40")
+					.attr("width", "1")
+					.attr("fill", "rgba(0,0,0,.0)")
+					.attr("stroke", "rgba(99,99,99,1)")
+					.attr("stroke-width", "2")
+					.attr("class", "svg-menu-mask")
+					.on("click", openPage)
+					.transition()
+						.delay(function(d,i) { return 500 + i * 250 })
+						.duration(500)
+						.attr("width", "200")
+						.attr("x", xOffset);
+		});
+		
+		
+		
+	}
+	
+	
+
+	
+
+			
+	menuVisible = ! menuVisible
+}
+
+//getSize();
 function getSize()
 {
 	// the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
@@ -367,6 +461,8 @@ function responsiveSVG()
 
 function openPage(d)
 {
+	menuVisible=true;
+	showMenu()
 	//Update page title
 	svg_page.select("text")
 		.transition()
@@ -392,14 +488,17 @@ function openPage(d)
 					.duration(1000)
 					.attr("height", viewportheight - 140);
 		});
+		
+		root="";
+		update();
 	}
-		svg_page.select("rect")
-			.transition()
-				.duration(400)
-				.attr("height", "65")
-			.transition()
-				.duration(1000)
-				.attr("height", viewportheight - 40);
+	svg_page.select("rect")
+		.transition()
+			.duration(400)
+			.attr("height", "65")
+		.transition()
+			.duration(1000)
+			.attr("height", viewportheight - 40);
 
 	
 
@@ -425,6 +524,7 @@ function drawForceChart(dataSource)
 	// Hide Text
 	svg_page.select(".svg-p-text")
 		.attr("height", "1");
+	
 	
 	width=viewportwidth - 270;
 	height=viewportheight - 140;
@@ -547,19 +647,6 @@ function flatten(root) {
         if (node.children) node.children.forEach(recurse);
         if (!node.id) node.id = ++i;
         nodes.push(node);
-    }
-
-    recurse(root);
-    return nodes;
-}
-
-function flatten2(root) {
-    var nodes = [], i = 0;
-
-    function recurse(node) {
-        if (node.children) {node.children.forEach(recurse);    click2(node);}
-        if (!node.id) node.id = ++i;
-        //nodes.push(node);
     }
 
     recurse(root);
