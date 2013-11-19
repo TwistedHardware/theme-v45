@@ -70,3 +70,12 @@ text {
         stroke: #9ecae1;
         stroke-width: 1.5px;
     }
+.popup-tip
+{
+	padding: 2px 4px 2px 2px;
+	border: solid #444 2px;
+	border-radius: 6px;
+	font-size: 0.7em;
+	background-color: rgba(255,255,255,0.85);
+	font-family: sans-serif;
+}
