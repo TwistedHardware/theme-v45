@@ -548,7 +548,7 @@ function drawForceChart(dataSource)
         tip = d3.tip()
          .attr('class', 'd3-tip')
          .offset([-10, 0])
-         .html(function(d) { return "<div style='padding: 2px 4px 2px 2px; border: solid black 2px; border-radius: 6px; font-size: 0.7em; background-color: rgba(255,255,255,0.85);'><strong>" + d.name + "</strong><br /><span style='color:black'>" + d.sector + "</span><br /><span style='color:red'>" + d.fdate + "</span><br /><span style='color:blue'>" + Humanize.compactInteger(d.cap,2) + "</span></div>"; });
+         .html(function(d) { return "<div class='popup-tip'><strong>" + d.name + "</strong><br /><span style='color:black'>" + d.sector + "</span><br /><span style='color:red'>" + d.fdate + "</span><br /><span style='color:blue'>" + Humanize.compactInteger(d.cap,2) + "</span></div>"; });
     svg.call(tip);
         
     link = svg.selectAll(".link");
