@@ -532,23 +532,23 @@ function drawForceChart(dataSource)
             .range([3, 4]);
         
         force = d3.layout.force()
-                .linkDistance(60)
-         .charge(-50) // -20
-         .gravity(.1)//0.1
-         .charge(-50)
-                .on("tick", tick)
-                .size([width, height - 160]);
+        	.linkDistance(60)
+        	.charge(-50) // -20
+        	.gravity(.1)//0.1
+        	.charge(-50)
+        	.on("tick", tick)
+        	.size([width, height]);
 
         vis = d3.select(".svg-chart")
                 .attr("x", 270)
                 .attr("y", 160)
-            .attr("width", width)
-            .attr("height", height-160);
+                .attr("width", width)
+                .attr("height", height);
         
         tip = d3.tip()
          .attr('class', 'd3-tip')
          .offset([-10, 0])
-         .html(function(d) { return "<div style='padding: 2px; border: solid black 1px; font-size: 1em; background-color: rgba(255,255,255,0.85);'><strong>" + d.name + "</strong><br /><span style='color:black'>" + d.sector + "</span><br /><span style='color:red'>" + d.fdate + "</span><br /><span style='color:blue'>" + Humanize.compactInteger(d.cap) + "</span></div>"; });
+         .html(function(d) { return "<div style='padding: 2px; border: solid black 1px; font-size: 1em; background-color: rgba(255,255,255,0.85);'><strong>" + d.name + "</strong><br /><span style='color:black'>" + d.sector + "</span><br /><span style='color:red'>" + d.fdate + "</span><br /><span style='color:blue'>" + Humanize.compactInteger(d.cap,2) + "</span></div>"; });
     svg.call(tip);
         
     link = svg.selectAll(".link");
